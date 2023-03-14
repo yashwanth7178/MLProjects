@@ -1,6 +1,6 @@
 import os
 import sys
-from src.exception import CuustomException
+from src.exception import CustomException
 from src.logger import logging
 import pandas as pd
 from sklearn.model_selection import train_test_split
@@ -38,7 +38,7 @@ class DataIngestion:
                 self.ingestion_config.train_data_path,self.ingestion_config.test_data_path
             )
         except Exception as e:
-            raise CuustomException(e,sys)
+            raise CustomException(e,sys)
         
 
 
